@@ -28,7 +28,7 @@
                   {% if post.image_url %}
                     <img class="card-img rounded-0" src="{{ post.image_url }}" alt="{{ post.title }}">
                   {% else %}
-                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="Post banner">
                   {% endif %}
                 </div>
                 <div class="blog__slide__content">
@@ -52,9 +52,9 @@
               <div class="single-recent-blog-post">
                 <div class="thumb">
                   {% if post.image_url %}
-                    <img class="img-fluid" src="{{ post.image_url }}" alt="">
+                    <img class="img-fluid" src="{{ post.image_url }}" alt="{{ post.title }}">
                   {% else %}
-                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="Post banner">
                   {% endif %}
 
                   <ul class="thumb-info" style='max-width:550px;'>
